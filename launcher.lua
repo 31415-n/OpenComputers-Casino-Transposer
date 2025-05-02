@@ -83,8 +83,8 @@ local libs = {
 }
 
 local function isAdmin(player)
-    for i = 1, #settings.ADMINS do
-        if settings.ADMINS[i] == player then
+    for k, admin  in ipairs(settings.ADMINS) do
+        if admin == player then
             return true
         end
     end
