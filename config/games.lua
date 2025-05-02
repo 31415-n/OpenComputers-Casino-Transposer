@@ -1,16 +1,5 @@
 local games = {}
 
-
-
-table.insert(games, {
-    title = 'Магазин',
-    file = "app_Shop.lua",
-    available = false,
-    image = "app_Shop.pic",
-    author = "krovyaka",
-    description = "Скоро тут будет магазин :)"
-})
-
 table.insert(games, {
     title = "Рулетка",
     file = "game_Roulette.lua",
