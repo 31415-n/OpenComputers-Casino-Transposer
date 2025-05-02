@@ -192,7 +192,7 @@ local function drawDynamic()
     end
     drawRectangleWithCenterText(2, 46, 46, 1, "Текущая валюта", 0x431148, 0xFFFFFF)
     drawCurrency(2, 47, currentCurrency)
-    buffer.drawText(40, 48, 0, "Сменить")
+    -- buffer.drawText(40, 48, 0, "Сменить")
 
     if (state.devMode) then
         drawRectangleWithCenterText(51, 40, 50, 5, "Обновить", 0x431148, 0xffffff)
@@ -288,22 +288,6 @@ while true do
     if e == "touch" then
         if state.devMode and not isAdmin(p) then
             goto continue
-        end
-
-        -- Currency
-        if state.currencyDropdown and state.selection > 0 then
-            if x >= 2 and x <= 46 and  y % 4 ~= 2 then
-                local currencyId = math.floor((y - (47 - 4 * #currencies)) / 4 + 1)
-                if currencyId > 0 and currencyId <= #currencies then
-                    casino.setCurrency(currencies[currencyId])
-                end
-            end
-            state.currencyDropdown = false
-            drawDynamic()
-            goto continue
-        elseif x >= 2 and y >= 46 and x <= 92 and y <= 50 and state.selection > 0 then
-            state.currencyDropdown = true
-            drawDynamic()
         end
 
         -- Left menu buttons
