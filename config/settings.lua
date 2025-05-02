@@ -1,6 +1,6 @@
 local settings = {}
 
-local REPOSITOTY = "https://github.com/31415-n/OpenComputers-Casino-Transposer/edit/master"
+local REPOSITOTY = "https://raw.githubusercontent.com/31415-n/OpenComputers-Casino-Transposer/master"
 settings.TITLE = "Приветствуем ваc у нас в казино"
 settings.ADMINS = {}
 
