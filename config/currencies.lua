@@ -10,7 +10,7 @@ local function addCurrency(name, id, dmg, model, color, max)
     })
 end
 
-addCurrency("Деньги",           "customnpcs:npcMoney",      0,   'INGOT', 0x85BB65, nil)
+addCurrency("Деньги",           "contenttweaker:money",      0,   'INGOT', 0x85BB65, nil)
 addCurrency("Светопыль",        "minecraft:glowstone_dust", 0,   'DUST',  0xD0D000, 5)
 addCurrency("Железный слиток",  "minecraft:iron_ingot",     0,   'INGOT', 0xAAAAAA, nil)
 addCurrency("Железный блок",    "minecraft:iron_block",     0,   'BLOCK', 0xAAAAAA, 6)

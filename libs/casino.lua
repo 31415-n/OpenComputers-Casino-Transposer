@@ -220,9 +220,9 @@ elseif settings.PAYMENT_METHOD == 'TRANSPOSER' then
                 if not slots_allItems then return {} end
                 return slots_allItems.getAll()
             end)()
-        for _, item in pairs(allItems) do
+        for _, item in pairs(allItems) do 
             if item and item.name == CURRENCY.id and item.damage == CURRENCY.dmg then
-                qty = qty + item.qty
+                qty = qty + item.size
             end
         end
         return qty or 0
